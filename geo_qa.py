@@ -52,60 +52,59 @@ def question_to_sparql_query(question):
 
             # query place
 
-        # question starting with What
-        if question.find("What") != -1:
-            # What is the area of <country>?
-            if question.find("area") != -1:
-                part_for_query = question[20:length_q - 1]
+    # question starting with What
+    if question.find("What") != -1:
+        # What is the area of <country>?
+        if question.find("area") != -1:
+            part_for_query = question[20:length_q - 1]
 
-                # query place
+            # query place
 
-            # What is the population of <country>?
-            if question.find("population") != -1:
-                part_for_query = question[26:length_q - 1]
+        # What is the population of <country>?
+        if question.find("population") != -1:
+            part_for_query = question[26:length_q - 1]
 
-                # query place
+             # query place
 
-            # What is the capital of <country>?
-            if question.find("capital") != -1:
-                part_for_query = question[23:length_q - 1]
+        # What is the capital of <country>?
+        if question.find("capital") != -1:
+            part_for_query = question[23:length_q - 1]
 
-                # query place
+            # query place
 
-            # What is the form of government in <country>?
-            if question.find("government") != -1:
-                part_for_query = question[34:length_q - 1]
+        # What is the form of government in <country>?
+        if question.find("government") != -1:
+            part_for_query = question[34:length_q - 1]
 
-                # query place
+            # query place
 
-        # question starting with When
-        if question.find("When") != -1:
-            # When was the president of <country> born?
-            if question.find("president") != -1:
-                part_for_query = question[26:length_q - 6]
+    # question starting with When
+    if question.find("When") != -1:
+        # When was the president of <country> born?
+        if question.find("president") != -1:
+            part_for_query = question[26:length_q - 6]
 
-                # query place
+            # query place
 
-            # When was the prime minister of <country> born?
-            if question.find("prime") != -1:
-                part_for_query = question[31:length_q - 6]
+        # When was the prime minister of <country> born?
+        if question.find("prime") != -1:
+            part_for_query = question[31:length_q - 6]
 
-                # query place
+            # query place
 
-        # question starting with where
-        if question.find("Where") != -1:
-            # Where was the president of <country> born?
-            if question.find("president") != -1:
-                part_for_query = question[27:length_q - 6]
+    # question starting with where
+    if question.find("Where") != -1:
+        # Where was the president of <country> born?
+        if question.find("president") != -1:
+            part_for_query = question[27:length_q - 6]
 
-                # query place
+            # query place
 
-            # Where was the prime minister of <country> born?
-            if question.find("prime") != -1:
-                part_for_query = question[32:length_q - 6]
+        # Where was the prime minister of <country> born?
+        if question.find("prime") != -1:
+            part_for_query = question[32:length_q - 6]
 
-                # query place
-
+            # query place
 
     # How many presidents were born in <country>?
     if question.find("were_born_in") != -1:
